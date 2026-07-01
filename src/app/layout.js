@@ -1,8 +1,9 @@
-import { Inter, Montserrat } from "next/font/google";
+import { Inter, Montserrat, Cormorant_Garamond } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: 'swap' });
 const montserrat = Montserrat({ subsets: ["latin"], variable: "--font-montserrat", display: 'swap' });
+const cormorant = Cormorant_Garamond({ subsets: ["latin"], weight: ['400', '600', '700'], variable: "--font-cormorant", display: 'swap' });
 
 export const metadata = {
   title: "925 Expertos en Joyas de Plata",
@@ -13,7 +14,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="es" className={`${inter.variable} ${montserrat.variable}`}>
+    <html lang="es" className={`${inter.variable} ${montserrat.variable} ${cormorant.variable}`}>
       <body>
         {children}
       </body>
