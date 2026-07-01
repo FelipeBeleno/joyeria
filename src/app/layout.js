@@ -5,9 +5,9 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: 'sw
 const montserrat = Montserrat({ subsets: ["latin"], variable: "--font-montserrat", display: 'swap' });
 
 export const metadata = {
-  title: "Compra y Venta de Oro y Plata en Bogotá | Mejor Precio",
-  description: "Compra y venta de oro y plata en Bogotá con el mejor precio del mercado. Pago inmediato y seguro. Tasa de cambio en vivo. Visítanos en Av. Cra. 91 #136-12, Suba, Bogotá.",
-  keywords: ["oro", "plata", "bogota", "compra de oro bogota", "venta de oro bogota", "precio del oro bogota"],
+  title: "925 Expertos en Joyas de Plata",
+  description: "925 Expertos en Joyas de Plata. El amor se convierte en joya, sorprende a quienes más amas en cualquier ocasión especial.",
+  keywords: ["joyas", "plata", "925", "plata 925", "joyeria bogota", "anillos de plata"],
   robots: "index, follow",
 };
 

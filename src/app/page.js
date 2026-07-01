@@ -1,5 +1,3 @@
-import { Suspense } from 'react';
-import ExchangeRates from '@/components/ExchangeRates';
 import Image from 'next/image';
 
 export default function Home() {
@@ -12,67 +10,89 @@ export default function Home() {
       {/* Hero Section */}
       <section className="hero-layout">
         <div className="hero-text-side">
-          <h1 className="title-massive">
-            Compra y Venta de <br />
-            <span className="text-gold-highlight">Oro y Plata</span> <br />
-            en Bogotá
+          <div className="hero-logo-925">
+            <div className="logo-numbers">925</div>
+            <div style={{ marginLeft: '1rem', lineHeight: 1.2, fontWeight: 'bold', fontSize: '1.2rem' }}>
+              EXPERTOS <br/>
+              EN JOYAS <br/>
+              DE PLATA
+            </div>
+          </div>
+          
+          <h1 className="title-massive" style={{ fontSize: '3.8rem', marginTop: '2rem' }}>
+            EXPERTOS EN <br />
+            <span className="text-gold-highlight">JOYAS DE PLATA</span> <br />
+            925
           </h1>
-          <p className="hero-description">
-            Ofrecemos la tasa más competitiva del mercado con pago inmediato y absoluta discreción.
-            Valoramos sus joyas, monedas y lingotes con la máxima precisión y transparencia.
+          <p className="hero-description" style={{ textTransform: 'uppercase', letterSpacing: '1px' }}>
+            Cada momento especial <br/> 
+            se convierte en joya, <br/> 
+            sorprende a quienes más amas
           </p>
+          
+          <div style={{ 
+            color: 'var(--text-secondary)', 
+            fontSize: '1.1rem', 
+            marginBottom: '3rem', 
+            fontWeight: 500,
+            borderLeft: '3px solid #fff',
+            paddingLeft: '1rem',
+            lineHeight: 1.5
+          }}>
+            También somos especialistas en <br/>
+            <span style={{ color: '#fff', fontWeight: 700 }}>Compra y Venta de Oro y Plata</span>
+          </div>
           
           <div className="action-buttons">
             <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="btn-luxury">
-              Cotizar ahora
-            </a>
-            <a href="#contacto" className="btn-ghost">
-              Ubicación
+              ¡TE ESPERAMOS!
             </a>
           </div>
-
-          <Suspense fallback={<div className="rates-glass-widget" style={{ minHeight: '100px', display: 'flex', justifyContent: 'center' }}><span className="rate-value" style={{ fontSize: '1.2rem' }}>Obteniendo tasas en vivo...</span></div>}>
-            <ExchangeRates />
-          </Suspense>
         </div>
         
         <div className="hero-image-side">
-          <Image 
-            src="/hero-bg.png" 
-            alt="Lingotes de Oro y Monedas de Plata" 
-            fill
-            priority
-            fetchPriority="high"
-            quality={60}
-            style={{ objectFit: 'cover' }}
-            sizes="(max-width: 992px) 100vw, 50vw"
-          />
-          <div className="hero-image-overlay"></div>
+          <div className="hexagon-grid">
+            <div className="hexagon hex-1">
+              <div className="hexagon-inner">
+                <Image src="/silver-ring.png" alt="Anillo de plata" fill style={{ objectFit: 'cover' }} sizes="232px" />
+              </div>
+            </div>
+            <div className="hexagon hex-2">
+              <div className="hexagon-inner">
+                <Image src="/silver-necklace.png" alt="Collar de plata" fill style={{ objectFit: 'cover' }} sizes="232px" />
+              </div>
+            </div>
+            <div className="hexagon hex-3">
+              <div className="hexagon-inner">
+                <Image src="/silver-bracelet.png" alt="Pulsera de plata" fill style={{ objectFit: 'cover' }} sizes="232px" />
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* Benefits Section */}
+      {/* Services Section */}
       <section className="section-padding">
         <div className="container">
-          <h2 className="section-title">El Estándar de la Excelencia</h2>
+          <h2 className="section-title">Nuestros Servicios</h2>
           
           <div className="benefits-grid">
             <div className="benefit-card">
+              <div className="benefit-icon">💍</div>
+              <h3>Joyería en Plata 925</h3>
+              <p>Ofrecemos un amplio y hermoso catálogo de joyas en Plata 925 con diseños exclusivos, perfectos para regalar o lucir en cualquier ocasión.</p>
+            </div>
+            
+            <div className="benefit-card">
               <div className="benefit-icon">⚖️</div>
-              <h3>Tasas Competitivas</h3>
-              <p>Monitoreamos los mercados internacionales al segundo para garantizarle la máxima rentabilidad en cada transacción.</p>
+              <h3>Compra de Oro y Plata</h3>
+              <p>Compramos tus piezas de oro y plata. Realizamos una valoración justa, precisa y transparente de tus metales con pago inmediato.</p>
             </div>
             
             <div className="benefit-card">
               <div className="benefit-icon">🛡️</div>
-              <h3>Máxima Privacidad</h3>
-              <p>Operamos bajo estrictos estándares de confidencialidad en un entorno seguro y exclusivo para nuestros clientes.</p>
-            </div>
-            
-            <div className="benefit-card">
-              <div className="benefit-icon">⚡</div>
-              <h3>Liquidez Inmediata</h3>
-              <p>Procesos ágiles de tasación y desembolso al instante, adaptándonos a sus necesidades financieras con prontitud.</p>
+              <h3>Garantía y Confianza</h3>
+              <p>Años de experiencia nos respaldan. Todas nuestras piezas de joyería cuentan con garantía de por vida sobre el material para tu total tranquilidad.</p>
             </div>
           </div>
         </div>
@@ -88,8 +108,8 @@ export default function Home() {
               <div className="contact-item">
                 <div className="contact-icon">📍</div>
                 <div>
-                  <h3>Sede Principal</h3>
-                  <p>Av. Cra. 91 #136-12<br/>Suba, Bogotá, Colombia</p>
+                  <h3>Sedes Suba</h3>
+                  <p>Centro Comercial Centro Suba Local L5-120<br/>Centro Comercial Centro Suba Local L11-012<br/>Cra 91#136-12 Batery</p>
                 </div>
               </div>
               
@@ -131,7 +151,7 @@ export default function Home() {
 
       <footer className="footer">
         <div className="container">
-          <p>&copy; {new Date().getFullYear()} Compra y Venta de Oro y Plata Bogotá. Excelencia y Confianza.</p>
+          <p>&copy; {new Date().getFullYear()} 925 Expertos en Joyas de Plata. Garantía de por vida sobre el material.</p>
         </div>
       </footer>
     </main>
