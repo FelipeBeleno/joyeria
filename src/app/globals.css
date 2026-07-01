@@ -356,24 +356,34 @@ a {
 @media (max-width: 992px) {
   .hero-layout { flex-direction: column; }
   .hero-text-side { 
-    padding: 6rem 2rem; 
+    padding: 6rem 2rem 3rem 2rem; 
     align-items: center; 
     text-align: center; 
   }
   .hero-image-side { 
-    height: 50vh; 
-    order: -1; 
+    height: auto; 
+    padding: 3rem 0;
+    border-left: none;
+    border-top: 2px solid rgba(255,255,255,0.05);
   }
-  .hero-image-overlay {
-    background: linear-gradient(to bottom, transparent 40%, var(--bg-primary) 100%);
+  .hexagon {
+    width: 180px;
+    height: 208px;
   }
-  .rates-glass-widget {
-    flex-direction: column;
-    gap: 2rem;
+  .hexagon-inner {
+    width: 172px;
+    height: 200px;
   }
-  .rate-divider {
-    width: 50px;
-    height: 1px;
+  .hex-1, .hex-3 { transform: translateX(30px); }
+  .hex-2 { transform: translateX(-30px); }
+  .hero-logo-925 {
+    justify-content: center;
+  }
+  .hero-description {
+    text-align: center;
+  }
+  .action-buttons {
+    justify-content: center;
   }
   .benefits-grid, .contact-layout {
     grid-template-columns: 1fr;
