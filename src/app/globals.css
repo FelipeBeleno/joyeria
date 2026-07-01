@@ -415,3 +415,36 @@ a {
     grid-template-columns: 1fr;
   }
 }
+
+@media (max-width: 768px) {
+  .title-massive { 
+    font-size: 2.8rem; 
+  }
+  .section-title { 
+    font-size: 2.2rem; 
+    margin-bottom: 2.5rem; 
+  }
+  /* Remove manual line breaks in hero text to allow natural wrapping on small screens */
+  .title-massive br, .hero-description br {
+    display: none;
+  }
+  .hero-text-side { 
+    padding: 5rem 1.5rem 2rem 1.5rem; 
+  }
+  .benefits-section, .section-padding { 
+    padding: 4rem 1.5rem; 
+  }
+  .map-wrapper {
+    padding: 2rem !important;
+  }
+  .hexagon {
+    width: 160px;
+    height: 185px;
+  }
+  .hexagon-inner {
+    width: 156px;
+    height: 181px;
+  }
+  .hex-1, .hex-3 { transform: translateX(15px); }
+  .hex-2 { transform: translateX(-15px); }
+}
