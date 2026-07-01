@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { Gem, Scale, ShieldCheck } from 'lucide-react';
 
 export default function Home() {
   const whatsappNumber = "573143223129";
@@ -78,19 +79,19 @@ export default function Home() {
           
           <div className="benefits-grid">
             <div className="benefit-card">
-              <div className="benefit-icon">💍</div>
+              <div className="benefit-icon"><Gem size={48} strokeWidth={1.5} /></div>
               <h3>Joyería en Plata 925</h3>
               <p>Ofrecemos un amplio y hermoso catálogo de joyas en Plata 925 con diseños exclusivos, perfectos para regalar o lucir en cualquier ocasión.</p>
             </div>
             
             <div className="benefit-card">
-              <div className="benefit-icon">⚖️</div>
+              <div className="benefit-icon"><Scale size={48} strokeWidth={1.5} /></div>
               <h3>Compra de Oro y Plata</h3>
               <p>Compramos tus piezas de oro y plata. Realizamos una valoración justa, precisa y transparente de tus metales con pago inmediato.</p>
             </div>
             
             <div className="benefit-card">
-              <div className="benefit-icon">🛡️</div>
+              <div className="benefit-icon"><ShieldCheck size={48} strokeWidth={1.5} /></div>
               <h3>Garantía y Confianza</h3>
               <p>Años de experiencia nos respaldan. Todas nuestras piezas de joyería cuentan con garantía de por vida sobre el material para tu total tranquilidad.</p>
             </div>
